@@ -7,7 +7,7 @@ int main(){
 	printf("tapez le rayon du cercle");
 	scanf("%f", &r);
 	r = 3.14 * r * 2;
-	printf("la circonfeence d'un cercle est %.2f", r);
+	printf("la circonference d'un cercle est %.2f", r);
 	return 0;
 	
 }
