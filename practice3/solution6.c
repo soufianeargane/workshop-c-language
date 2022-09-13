@@ -1,29 +1,35 @@
-# include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n,i,p,ok;
+    scanf("%d",&n);
+    for(p=2;p<=n;p++)
+    {
+        ok=1;
+        for(i=2;i<p;i++)
+        {
+            if(p%i==0) {ok=0; break; }
+        }
+        if(ok==1) printf("%d ",p);
+    }
+    
+    return 0;
+}
+
+
+/*# include <stdio.h>
 # include <stdlib.h>
 
 int main (){
-	int p[100];
-	int i, n,f,s=0;
-	int e=0;
-	scanf("%d", &n);
-	for(f=2;f<=n;f++){
-		for(i=1;i<=f;i++){
-	    if(i!=1 && i!=f){
-	    	if(){ 
-	    	s++;
-		    } else{
-		    	p[e]=f;
-		    	e++;
-		    	//break;
-			} 
+	int i, ok, p, n;
+	scanf("%d", n);
+	for (p=2; p<=n;p++){
+		ok = 1;
+		for (i=2;i<p;i++)
+		{
+			if (p%i==0){ok=0; }break;
 		}
-	   }
+		if (ok==1) printf("%d",p);
 	}
-	
-   	printf("%d",p[3]);
-	
-    
-	
-
-	return 0;
-}
+}*/
